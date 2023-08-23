@@ -4,28 +4,42 @@ import IMG1 from "../../assets/portfolio1.png";
 import IMG2 from "../../assets/portfolio2.png";
 import IMG3 from "../../assets/portfolio3.png";
 import IMG4 from "../../assets/portfolio4.png";
+import IMG5 from "../../assets/portfolio5.png";
+import IMG6 from "../../assets/portfolio6.png";
+import IMG7 from "../../assets/portfolio7.png";
 
 const data = [
   {
-    id: 1,
+    img: IMG5,
+    title: "Offiql Tech - Clone Site",
+    href: "https://github.com/ucantbe-jagmeet/offiql-technologies",
+  },
+  {
+    img: IMG6,
+    title: "AKP Project - Clone Site",
+    href: "https://github.com/ucantbe-jagmeet/akp-project",
+  },
+  {
     img: IMG1,
     title: "Yummy Slice Pizza",
     href: "https://github.com/ucantbe-jagmeet/yummy-slice-pizza",
   },
   {
-    id: 2,
+    img: IMG7,
+    title: "Google Form Clone",
+    href: "https://github.com/ucantbe-jagmeet/g-form-project",
+  },
+  {
     img: IMG2,
     title: "Image Gallery",
     href: "https://github.com/ucantbe-jagmeet/imageGallery",
   },
   {
-    id: 3,
     img: IMG3,
     title: "CV ",
     href: "https://github.com/ucantbe-jagmeet/cv",
   },
   {
-    id: 4,
     img: IMG4,
     title: "Profile Card",
     href: "https://github.com/ucantbe-jagmeet/profile-card",
@@ -38,11 +52,11 @@ const Portfolio = () => {
       <h2>Portfolio</h2>
 
       <div className="container portfolio__container">
-        {data.map((links) => {
+        {data.map((links, index) => {
           const { id, img, title, href } = links;
 
           return (
-            <article key={id} className="portfolio__item">
+            <article key={index} className="portfolio__item">
               <div className="portfolio__item-image">
                 <img src={img} alt="portfolio image" />
               </div>
