@@ -27,7 +27,8 @@ header{
     gap:0.8rem;
     position: absolute;
     left: 0;
-    bottom: 3rem;
+    bottom: 1rem;
+    transform: scale(1.5);
 }
 
 
